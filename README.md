@@ -1,7 +1,7 @@
 # ProjektR
 do raporcików
 
-projektr.exe -m|--mode MODE [-f|--format FORMAT] [-y|--year yyyy] [-m|--month m] [-d|--day d] [-v|--verbose] [--help]
+projektr.exe [-M|--mode MODE] [-f|--format FORMAT] [-y|--year yyyy] [-m|--month m] [-d|--day d] [-v|--verbose] [--help]
 
 Jeżeli nie określono parametru "v" (verbose) program druku tylko i wyłącznie obliczoną datę na standardowym wyjściu i kończy pracę bez oczekiwania na reakcję użytkownika. 
 
@@ -13,7 +13,7 @@ Jeżeli przekazana zostanie wartość poza właściwym (kalendarzowym) zakresem,
 
 parametry : 
 
-* m|mode : tryb wyznaczania daty
+* M|mode : tryb wyznaczania daty
 * f|format : format wyjścia daty
 * y|year : ustawia rok daty odwołania
 * m|month : ustawia miesiąc daty odwołania
@@ -23,6 +23,7 @@ parametry :
 
 tryby pracy (MODE) : 
 
+* CD : Current Date (dla 2016-05-16 => 2016-05-16) - domyślnie, jeżeli nie określono inaczej
 * EL : End of Last month (dla 2016-05-16 => 2016-04-30)
 * BL : Beginning of Last month (dla 2015-05-16 => 2016-04-01)
 * DB : Day Before (dla 2016-05-16 => 2016-05-15)
