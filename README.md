@@ -1,4 +1,2 @@
 # ProjektR
 do raporcików
-
-
