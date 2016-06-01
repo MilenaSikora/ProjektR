@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+main (void)
+{
+int tab[] = {11, 22, 44, 55, 66, 77, 88, 99};
+int i;
+for (i=0; i < sizeof (tab) / sizeof (int); i++)
+printf("%d", tab[i]);
+printf("\n");
+return 0;
+}
